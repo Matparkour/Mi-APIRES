@@ -1,0 +1,33 @@
+###                         
+// iniciamos una nueva peticion
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Juan",
+    "age":"80",
+    "email":"juan@gmail.com"
+}
+
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+
+GET http://localhost:9000/api/users/6630659fcc4c34157e3aab4e HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/6630659fcc4c34157e3aab4e HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Juan Perez",
+    "age":"81",
+    "email":"juan@gmail.com"
+}
+
+###
+
+
+DELETE  http://localhost:9000/api/users/66306b97b597b7acecd744f9 HTTP/1.1
